@@ -1,0 +1,1 @@
+{"worldSpeaceType":1,"worldSpeaceDifficulty":0}

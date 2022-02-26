@@ -14,14 +14,14 @@ public class Bg : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log("按下指针");
+        // Debug.Log("按下指针");
         isRotationEllen = true;
         previousPositionX = Input.mousePosition.x;
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        Debug.Log("松开指针");
+        // Debug.Log("松开指针");
         isRotationEllen = false;
         previousPositionX = 0f;
     }
