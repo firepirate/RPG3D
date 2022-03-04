@@ -16,8 +16,10 @@ public class StartGeneralModeScene : MonoBehaviour, IPointerClickHandler, IWorld
         SceneManager.LoadScene("GeneralModeScene");
     }
 
+    // 对外的事件调用，切换模式时
     public void WorldModeUpdate(WorldSpeaceType type, WorldSpeaceDifficulty difficulty)
     {
+        Debug.Log("模式改变");
         isUpdateWorldMode = true;
         WorldSpeaceData data = new WorldSpeaceData(type, difficulty);
         SerializeData<WorldSpeaceData>.SerializeDataJson(Path.worldSpeacePath, data);
